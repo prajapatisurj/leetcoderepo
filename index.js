@@ -47,3 +47,19 @@
 // let nums = [2, 7, 11, 15],
 //   target = 9;
 // console.log(twoSum(nums, target));
+
+// maximum sunArray
+
+var maximumSubArray = function (nums) {
+  let maximum = nums[0];
+  let small = 0;
+  nums.forEach((n) => {
+    small += n;
+    maximum = Math.max(maximum, small);
+    if (small < 0) small = 0;
+  });
+  return maximum;
+};
+
+Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+Output: 6
