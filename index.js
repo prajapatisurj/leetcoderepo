@@ -29,3 +29,21 @@
 // let d='car'  false
 
 // console.log(validAnagram(c,d))
+
+// two sum
+
+// var twoSum = function (nums, target) {
+//   let arr = [];
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = 0; j < nums.length; j++) {
+//       if (nums[i] + nums[j] === target) {
+//         arr.push(i, j);
+//         return arr;
+//       }
+//     }
+//   }
+// };
+
+// let nums = [2, 7, 11, 15],
+//   target = 9;
+// console.log(twoSum(nums, target));
